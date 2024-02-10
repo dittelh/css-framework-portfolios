@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Raleway;
+    src: url("assets/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url("assets/Raleway-SemiBold.ttf");
+}
+
+body{
+    background-color: #101f73;
+}
+
+.dlh_logo {
+  width: 3.125rem;
+}
+
+.navbar-toggler {
+  border: #f23030 1px solid;
+  border-color: #f23030 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 48, 48)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-body-tertiary {
+  background-color: #101f73 !important;
+}
+
+.offcanvas {
+  background-color: #101f73;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #f26b6b !important;
+}
+
+.btn-close {
+  color: rgb(95, 159, 255) !important;
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+}
+
+/* Indhold */
+
+.ditte_cover {
+  background-color: #101f73;
+  margin-top: 5rem;
+}
+
+.titles{
+    color: #F0F0F2;
+    text-align: center;
+    font-family: RalewaySemiBold;
+}
+
+/* HR */
+.border {
+    border: 2px solid #3C56A6 !important;
+}
+
+.skills-img{
+    object-fit: fill !important;
+    height: 40vw !important;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+}
+
+
+/* Slideshow */
+
+.img-custom{
+    height: 15rem;
+    object-fit: scale-down;
+}
