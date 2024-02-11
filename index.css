@@ -1,11 +1,11 @@
 @font-face {
     font-family: Raleway;
-    src: url("assets/Raleway-Regular.ttf");
+    src: url("/portfolio_bootstrap/assets/Raleway-Regular.ttf");
 }
 
 @font-face {
     font-family: RalewaySemiBold;
-    src: url("assets/Raleway-SemiBold.ttf");
+    src: url("/portfolio_bootstrap/assets/Raleway-SemiBold.ttf");
 }
 
 body{
@@ -43,39 +43,20 @@ body{
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
 }
 
-/* Indhold */
-
 .ditte_cover {
-  background-color: #101f73;
-  margin-top: 5rem;
-}
-
-.titles{
-    color: #F0F0F2;
-    text-align: center;
-    font-family: RalewaySemiBold;
-}
-
-/* HR */
-.border {
-    border: 2px solid #3C56A6 !important;
-}
-
-.skills-img{
-    object-fit: fill !important;
-    height: 40vw !important;
-    border-radius: 10px 10px 0 0;
-    padding: 5px;
+    background-color: #101f73;
+    margin-top: 5rem;
+  
 }
 
 .card{
     background-color: #F0F0F2;
+    box-shadow: black 0,3,2;
 }
 
-
-/* Slideshow */
-
-.img-custom{
-    height: 15rem;
-    object-fit: scale-down;
+.btn{
+    background-color: #f23030;
+    color: #F0F0F2;
+    text-transform: uppercase;
+    font-family: Raleway;
 }
