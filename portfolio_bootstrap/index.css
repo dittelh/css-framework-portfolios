@@ -50,10 +50,22 @@ body{
   margin-top: 5rem;
 }
 
+
+.ditte_web{
+    display: none;
+}
+
 .titles{
     color: #F0F0F2;
     text-align: center;
     font-family: RalewaySemiBold;
+}
+
+/* Om mig */
+
+.whoAmIDiv{
+    display: flex;
+    flex-direction: column;
 }
 
 /* HR */
@@ -78,4 +90,21 @@ body{
 .img-custom{
     height: 15rem;
     object-fit: scale-down;
+}
+
+/* Form */
+
+.custom-text{
+    color: #F0F0F2;
+}
+
+@media only screen and (min-width: 1000px){
+    .ditte_phone{
+        display: none;
+    }
+
+    .ditte_web{
+        display: flex;
+    
+    }
 }

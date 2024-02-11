@@ -13,70 +13,101 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar px-3 navbar-expand-lg bg-body-tertiary fixed-top">
-        <a class="navbar-brand" href="../index.html"
-          ><img class="dlh_logo" src="assets/dlh_logo_1.svg" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#navbarOffcanvasLg"
-          aria-controls="navbarOffcanvasLg"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="navbarOffcanvasLg"
-          aria-labelledby="navbarOffcanvasLgLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Forside</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#Værktøjer" 
-                  >Værktøjer</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Projekter</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar px-3 navbar-expand-lg bg-body-tertiary fixed-top">
+      <a class="navbar-brand" href="../index.html"
+        ><img class="dlh_logo" src="assets/dlh_logo_1.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbarOffcanvasLg"
+        aria-controls="navbarOffcanvasLg"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="navbarOffcanvasLg"
+        aria-labelledby="navbarOffcanvasLgLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
-      </nav>
-      <img class="ditte_cover pt-5" src="assets/ditte_mobile.svg" alt="" />
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Forside</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Værktøjer">Værktøjer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Projekter</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img
+      class="ditte_cover pt-5 ditte_web container-fluid"
+      src="assets/ditte_web.svg"
+      alt=""
+    />
+
+    <div class="container">
+      <img
+        class="ditte_cover pt-5 ditte_phone"
+        src="assets/ditte_mobile.svg"
+        alt=""
+      />
+
+      <hr class="border border-2 opacity-100 mt-5 mb-5" />
+
+      <div class="whoAmIDiv">
+        <h2 class="titles">Hvem er jeg?</h2>
+        <p class="custom-text">
+          Jeg er Ditte Lykke Hansen og er 27 år gammel. Jeg er Webudvikler og
+          glæder mig til at bidrage med mine ideer og de færdigheder, jeg har
+          lært, men også til at lære endnu mere.
+          <br />
+          I et team er jeg hjælpsom, positiv og ambitiøs. Det fedeste ved denne
+          branche er, at du aldrig bliver færdig med at lære, og det er bestemt
+          noget, jeg værdsætter.
+        </p>
+        <a class="mx-auto" href="#kontakt"><button class="btn btn-primary ">Kontakt mig</button></a>
+      </div>
+
+      <hr class="border border-2 opacity-100 mt-5" />
 
       <div class="skills-container pt-5 mt-2">
         <h2 class="titles" id="Værktøjer">Værktøjer</h2>
         <div class="row">
           <div class="col-6 col-md-3 mb-3">
             <div class="card">
-              <img class="skills-img" src="assets/frontend.png" class="card-img-top" alt="..." />
+              <img
+                class="skills-img"
+                src="assets/frontend.png"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Frontend</h5>
                 <p class="card-text">
@@ -88,7 +119,12 @@
 
           <div class="col-6 col-md-3 mb-3">
             <div class="card">
-              <img class="skills-img" src="assets/backend.png" class="card-img-top" alt="..." />
+              <img
+                class="skills-img"
+                src="assets/backend.png"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Backend</h5>
                 <p class="card-text">
@@ -100,7 +136,12 @@
 
           <div class="col-6 col-md-3 mb-3">
             <div class="card">
-              <img class="skills-img" src="assets/design.png" class="card-img-top" alt="..." />
+              <img
+                class="skills-img"
+                src="assets/design.png"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Grafisk Design</h5>
                 <p class="card-text">
@@ -112,7 +153,12 @@
 
           <div class="col-6 col-md-3 mb-3">
             <div class="card">
-              <img class="skills-img" src="assets/animation.png" class="card-img-top" alt="..." />
+              <img
+                class="skills-img"
+                src="assets/animation.png"
+                class="card-img-top"
+                alt="..."
+              />
               <div class="card-body">
                 <h5 class="card-title">Animation</h5>
                 <p class="card-text">
@@ -206,6 +252,93 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <hr class="border border-2 opacity-100 mt-5" />
+
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4 custom-text">
+          Kontakt mig
+        </h2>
+        <p class="text-center w-responsive mx-auto mb-5 custom-text">
+          Har du nogle spørgsmål? Så tøv endelig ikke med at kontakte mig
+          direkte med nedenstående kontakt formular.
+        </p>
+
+        <div class="row">
+          <div class="col mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact-form"
+              action="mail.php"
+              method="POST"
+            >
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="name" class="custom-text">Dit navn</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <label for="email" class="custom-text">Din Email</label>
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <label for="subject" class="custom-text">Emne</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <label for="message" class="custom-text">Din besked</label>
+                    <textarea
+                      type="text"
+                      id="message"
+                      name="message"
+                      rows="2"
+                      class="form-control md-textarea"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="text-center text-md-left">
+              <a
+                class="btn btn-primary"
+                onclick="document.getElementById('contact-form').submit();"
+                >Send</a
+              >
+            </div>
+            <div class="status"></div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
   <script
