@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Raleway;
+  src: url('/portfolio_bootstrap/assets/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url('/portfolio_bootstrap/assets/Raleway-SemiBold.ttf');
+}
+
+body {
+  background-color: #101f73 !important;
+}
+
+.dlh_logo {
+  width: 3.125rem;
+}
+
+.nav-custom {
+  background-color: #101f73 !important;
+  border-bottom: #f23030 2px solid !important;
+}
+
+.ul-custom {
+  background-color: #101f73 !important;
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
+}
+
+.text-gray-900 {
+  color: #f23030 !important;
+}
+
+a:hover {
+  color: #f0f0f2 !important;
+}
+
+.ditte_cover {
+  margin-top: 3rem;
+}
+
+.ditte_web {
+  display: none;
+}
+
+.hr-custom{
+    background-color: #3C56A6 !important;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .ditte_phone {
+    display: none;
+  }
+
+  .ditte_web {
+    display: flex;
+  }
+}
