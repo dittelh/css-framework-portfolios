@@ -1,15 +1,29 @@
 @font-face {
-    font-family: Raleway;
-    src: url("assets/Raleway-Regular.ttf");
+  font-family: Raleway;
+  src: url('assets/Raleway-Regular.ttf');
 }
 
 @font-face {
-    font-family: RalewaySemiBold;
-    src: url("assets/Raleway-SemiBold.ttf");
+  font-family: RalewaySemiBold;
+  src: url('assets/Raleway-SemiBold.ttf');
 }
 
-body{
-    background-color: #101f73;
+#Værktøjer{
+  scroll-margin-top: 15rem;
+}
+
+#projekter{
+  scroll-margin-top: 9rem;
+}
+
+#kontakt{
+  scroll-margin-top: 10%;
+}
+
+
+
+body {
+  background-color: #101f73;
 }
 
 .dlh_logo {
@@ -19,6 +33,20 @@ body{
 .navbar-toggler {
   border: #f23030 1px solid;
   border-color: #f23030 !important;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
+}
+
+.nav-link {
+  color: #f26b6b !important;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+  color: #f0f0f2 !important;
 }
 
 .navbar-toggler-icon {
@@ -33,14 +61,18 @@ body{
   background-color: #101f73;
 }
 
-.navbar-nav .nav-link.active,
+/* .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: #f26b6b !important;
-}
+} */
 
 .btn-close {
   color: rgb(95, 159, 255) !important;
   background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+}
+
+.nav-custom {
+  border-bottom: #f23030 2px solid;
 }
 
 /* Indhold */
@@ -50,32 +82,103 @@ body{
   margin-top: 5rem;
 }
 
-.titles{
-    color: #F0F0F2;
-    text-align: center;
-    font-family: RalewaySemiBold;
+.ditte_web {
+  display: none;
+}
+
+.titles {
+  color: #f0f0f2;
+  text-align: center;
+  font-family: RalewaySemiBold;
+  padding-bottom: 1rem;
+}
+
+/* Om mig */
+
+.whoAmIDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 /* HR */
 .border {
-    border: 2px solid #3C56A6 !important;
+  border: 2px solid #3c56a6 !important;
 }
 
-.skills-img{
-    object-fit: fill !important;
-    height: 40vw !important;
-    border-radius: 10px 10px 0 0;
-    padding: 5px;
+.skills-img {
+  object-fit: fill !important;
+  height: 40vw !important;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
 }
 
-.card{
-    background-color: #F0F0F2;
+.card {
+  background-color: #f0f0f2;
+  height: 100%;
 }
-
 
 /* Slideshow */
 
-.img-custom{
-    height: 15rem;
-    object-fit: scale-down;
+/* .img-custom {
+  height: 15rem;
+  object-fit: scale-down;
+} */
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: 0.25rem;
+}
+
+.carousel-inner {
+  margin-bottom: 1rem;
+}
+
+/* Form */
+
+.custom-text {
+  color: #f0f0f2;
+}
+
+/* btn */
+.btn-custom {
+  background-color: #f23030 !important;
+  border-color: #f23030;
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
+}
+
+.btn-custom:hover {
+  background-color: #a71e1e !important;
+  border-color: #a71e1e;
+}
+
+@media only screen and (min-width: 1000px) {
+  .ditte_phone {
+    display: none;
+  }
+
+  .ditte_web {
+    display: flex;
+  }
+
+  .skills-img {
+    height: 15vw !important;
+    object-fit: cover !important;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+  }
+
+  .btn-custom {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Slideshow */
+
+  .img-custom {
+    height: 100%;
+    object-fit: cover;
+  }
 }
