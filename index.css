@@ -44,19 +44,23 @@ body{
 }
 
 .ditte_cover {
-    background-color: #101f73;
-    margin-top: 5rem;
-  
+  background-color: #101f73;
+  margin-top: 5rem;
+
 }
 
 .card{
-    background-color: #F0F0F2;
-    box-shadow: black 0,3,2;
+  background-color: #F0F0F2;
+  box-shadow: black 0,3,2;
+}
+
+.card-custom{
+  background-color: #F0F0F2;
 }
 
 .btn{
-    background-color: #f23030;
-    color: #F0F0F2;
-    text-transform: uppercase;
-    font-family: Raleway;
+  background-color: #f23030;
+  color: #F0F0F2;
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
 }
