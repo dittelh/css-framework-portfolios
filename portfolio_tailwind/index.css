@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Raleway;
+  src: url('/portfolio_bootstrap/assets/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: RalewaySemiBold;
+  src: url('/portfolio_bootstrap/assets/Raleway-SemiBold.ttf');
+}
+
+#værktøjer {
+  scroll-margin-top: 10rem;
+}
+
+#indicators-carousel {
+  scroll-margin-top: 10rem;
+}
+
+#kontakt {
+  scroll-margin-top: 10%;
+}
+
+body {
+  background-color: #101f73 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dlh_logo {
+  width: 3.125rem;
+}
+
+.nav-custom {
+  background-color: #101f73 !important;
+  border-bottom: #f23030 2px solid !important;
+}
+
+.ul-custom {
+  background-color: #101f73 !important;
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
+}
+
+.text-gray-900 {
+  color: #f23030 !important;
+}
+
+a:hover {
+  color: #f0f0f2 !important;
+}
+
+.ditte_cover {
+  margin-top: 3rem;
+}
+
+.ditte_web {
+  display: none;
+}
+
+.hr-custom {
+  background-color: #3c56a6 !important;
+}
+
+.whoAmIDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.titles {
+  color: #f0f0f2;
+  text-align: center;
+  font-family: RalewaySemiBold;
+  padding-bottom: 1rem;
+}
+
+.custom-text {
+  color: #f0f0f2;
+}
+
+/* btn */
+.btn-custom {
+  background-color: #f23030 !important;
+  border-color: #f23030;
+  text-transform: uppercase;
+  font-family: RalewaySemiBold;
+}
+
+.btn-custom:hover {
+  background-color: #a71e1e !important;
+  border-color: #a71e1e;
+}
+
+.img-custom {
+  width: 100%;
+}
+
+.card,
+.card-custom {
+  background-color: #f0f0f2 !important;
+}
+
+.card-custom {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.card-title {
+  color: black !important;
+}
+
+.slideshow-img {
+  background-color: #101f73;
+}
+
+.arrow-custom {
+  background-color: #f0f0f2 !important;
+}
+.indicator-custom {
+  background-color: #f0f0f2 !important;
+}
+
+.label-custom {
+  color: #f0f0f2 !important;
+}
+
+.input-custom {
+  background-color: #f0f0f2 !important;
+  color: black !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .ditte_phone {
+    display: none;
+  }
+
+  .ditte_web {
+    display: flex;
+  }
+}
