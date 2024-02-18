@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Set your brand colors
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+$darkblue: #101f73;
+$lightblue: #3c56a6;
+$red: #f23030;
+$white: #f0f0f2;
+$black: #000000;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Raleway', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $darkblue;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
+
+.nav-custom {
+  background-color: $darkblue;
+  border-bottom: $red 2px solid;
+}
+
+.navbar-burger {
+  color: $red;
+}
+
+.navburger-custom {
+  background-color: $darkblue;
+}
+
+.dlh_logo {
+  width: 3.125rem;
+}
+
+.ditte_cover {
+  background-color: #101f73;
+  margin-top: 5rem;
+}
+
+.ditte_web {
+  display: none;
+}
+
+.navbar-item,
+.navbar-link {
+  color: $red;
+}
+
+.navbar-burger span {
+  background-color: $red;
+}
+
+.container {
+  .border {
+    background-color: $lightblue;
+    height: 4px;
+  }
+}
+
+.custom-text {
+  color: $white;
+}
+
+.titles {
+  color: $white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.whoAmIDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-custom {
+  background-color: $red;
+  border-color: $red;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  color: $white;
+}
+
+.skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-img {
+  object-fit: fill !important;
+  height: 40vw !important;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+}
+
+.slider-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#slider .card-content {
+  max-width: 50%;
+}
+
+#slider {
+  overflow: hidden;
+}
+
+.label{
+    color: $white;
+}
+
+@media screen and (max-width: 1023px) {
+  #slider .card-content {
+    display: none;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.item-slide img {
+  max-width: 1200px;
+}
+
+.caption-container {
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .ditte_phone {
+    display: none;
+  }
+
+  .ditte_web {
+    display: flex;
+  }
+
+  //   .card {
+  //     width: 100%;
+  //   }
+
+  .skills-img {
+    height: 15vw !important;
+    object-fit: cover !important;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+  }
+}

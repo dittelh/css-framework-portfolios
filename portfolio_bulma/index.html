@@ -1,11 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulma</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My custom Bulma website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"
+    />
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
+  <body class="has-navbar-fixed-top">
+    <nav
+      class="navbar is-fixed-top nav-custom"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img
+            src="/portfolio_bootstrap/assets/dlh_logo_1.svg"
+            class="dlh_logo"
+          />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu navburger-custom">
+        <div class="navbar-end pr-5 mr-5">
+          <div class="navbar-start">
+            <a class="navbar-item"> FORSIDE </a>
+            <a class="navbar-item"> VÆRKTØJER </a>
+            <a class="navbar-item"> PROJEKTER </a>
+            <a class="navbar-item"> KONTAKT </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mx-auto px-5 container">
+      <img
+        class="ditte_cover pt-5 ditte_web"
+        src="/portfolio_bootstrap/assets/ditte_web.svg"
+        alt=""
+      />
+      <img
+        class="ditte_cover pt-0 ditte_phone"
+        src="/portfolio_bootstrap/assets/ditte_mobile.svg"
+        alt=""
+      />
+
+      <hr class="border" />
+
+      <div class="whoAmIDiv">
+        <h2 class="titles is-size-3-desktop is-size-4-touch">Hvem er jeg?</h2>
+        <p class="custom-text">
+          Jeg hedder Ditte Lykke Hansen og er 27 år gammel. Jeg er Webudvikler
+          og glæder mig til at bidrage med mine ideer og de færdigheder, jeg har
+          lært, men også til at lære endnu mere.
+          <br />
+          I et team er jeg hjælpsom, positiv og ambitiøs. Det fedeste ved denne
+          branche er, at du aldrig bliver færdig med at lære, og det er bestemt
+          noget, jeg værdsætter.
+        </p>
+        <a class="mx-auto" href="#kontakt"
+          ><button class="button btn-custom mt-5">Kontakt mig</button></a
+        >
+      </div>
+
+      <hr class="border" />
+
+      <h2 class="titles is-size-3-desktop is-size-4-touch">Værktøjer</h2>
+      <div
+        class="skills-div px-3 columns is-justify-content-center is-flex-wrap-wrap is-flex-direction-row flex-wrap is-flex-grow-5"
+      >
+        <div class="card column">
+          <div class="card-image">
+            <img
+              class="skills-img"
+              src="/portfolio_bootstrap/assets/frontend.png"
+              alt="Placeholder image"
+            />
+          </div>
+          <div class="card-content mt-5">
+            <div class="content">
+              <h5 class="card-title">Frontend</h5>
+              <p class="card-text">
+                Jeg kan arbejde med React, Angular, Ionic og HTML, CSS & JS.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card column">
+          <div class="card-image">
+            <img
+              class="skills-img"
+              src="/portfolio_bootstrap/assets/backend.png"
+              alt="Placeholder image"
+            />
+          </div>
+          <div class="card-content mt-5">
+            <div class="content">
+              <h5 class="card-title">Backend</h5>
+              <p class="card-text">
+                Jeg kan arbejde med PHP, Node.JS, MySQL, Firebase mm.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card column">
+          <div class="card-image">
+            <img
+              class="skills-img"
+              src="/portfolio_bootstrap/assets/design.png"
+              alt="Placeholder image"
+            />
+          </div>
+          <div class="card-content mt-5">
+            <div class="content">
+              <h5 class="card-title">Grafisk Design</h5>
+              <p class="card-text">
+                Jeg arbejder med Illustrator, Figma og meget mere.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card column">
+          <div class="card-image">
+            <img
+              class="skills-img"
+              src="/portfolio_bootstrap/assets/animation.png"
+              alt="Placeholder image"
+            />
+          </div>
+          <div class="card-content mt-5">
+            <div class="content">
+              <h5 class="card-title">Animation</h5>
+              <p class="card-text">
+                Jeg har arbejdet med video i især After Effects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border" />
+
+      <h2 class="titles is-size-3-desktop is-size-4-touch">Projekter</h2>
+
+      <section>
+        <div id="slider">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9 is-covered">
+                <img src="/portfolio_bootstrap/assets/todos.png" alt="" />
+              </figure>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9 is-covered">
+                <img src="/portfolio_bootstrap/assets/tips.png" alt="" />
+              </figure>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9 is-covered">
+                <img src="/portfolio_bootstrap/assets/buddys.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="border" />
+
+      <h2 class="titles is-size-3-desktop is-size-4-touch">Kontakt mig</h2>
+      <p class="custom-text mb-5">
+        Har du nogle spørgsmål? Så tøv endelig ikke med at kontakte mig direkte
+        med nedenstående kontakt formular.
+      </p>
+
+      <div class="mb-5">
+        <div class="field">
+          <label class="label">Dit navn</label>
+          <div class="control">
+            <input class="input" type="text" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Din email</label>
+          <div class="control">
+            <input class="input" type="text" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Emne</label>
+          <div class="control">
+            <input class="input" type="text" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea"></textarea>
+          </div>
+        </div>
+        <div class="is-flex">
+          <button class="button btn-custom mt-5 mx-auto">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#slider', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: false,
+      });
+    </script>
+  </body>
 </html>
