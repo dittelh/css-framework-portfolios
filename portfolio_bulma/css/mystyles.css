@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -3413,6 +3414,18 @@ a.navbar-item,
         padding: 9rem 4.5rem; }
       .section.is-large {
         padding: 18rem 6rem; } }
+
+html {
+  scroll-behavior: smooth; }
+
+#værktøjer {
+  scroll-margin-top: 15rem; }
+
+#projekter {
+  scroll-margin-top: 9rem; }
+
+#kontakt {
+  scroll-margin-top: 10%; }
 
 .nav-custom {
   background-color: #101f73;
